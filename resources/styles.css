@@ -101,4 +101,93 @@ select:focus, input:focus, button:focus{
     .currency .input{
         width: 12.5rem;
     }
+    body{
+        background: rgb(252,252,252);
+    background: linear-gradient(180deg, rgba(252,252,252,1) 0%, rgba(62,96,44,0.9108237044817927) 72%, rgba(62,96,44,1) 100%);
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        height:100vh;
+        margin: 0;
+        padding: 1rem;
+    
+    }
+    h1{
+        color: var(--primary-color);
+        text-align: center;
+        font-family: 'Bowlby One SC', sans-serif;
+    }
+    p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .btn{
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        border-radius: .4rem;
+        font-size: .9rem;
+        padding: .3rem .75rem;
+        margin-left: .5rem;
+    }
+    #moneySign{
+        height: 35%;
+        animation-name: rotate;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        margin-bottom: 1rem;
+        
+    }
+    @keyframes rotate {
+        0% {rotate: 0deg;}
+        50% {rotate: 180deg}
+        100% {rotate: 360deg}
+    }
+    .currency{
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .currency select {
+        padding: .7rem 1.2rem .7rem .7rem;
+        appearance: none;
+        border: 1px solid #ededed;
+        border-radius: 5px;
+        background-position: right .7rem, top 50%, 0, 0;
+        background-size: 1px auto, 100%;
+        background-repeat: no-repeat;
+        width: 35%;
+    }
+    .currency input {
+        border: 0;
+        font-size: 1.3rem;
+        text-align: right;
+        width: 60%;
+        margin-left: .5rem;
+    }
+    .swap-rate-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .rate {
+        color: black;
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    select:focus, input:focus, button:focus{
+        outline: 0;
+    }
+    .mid{
+        display: flex;
+        justify-content: space-between;
+    }
+    .centerSection {
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding: 2rem;
+    }
 }
